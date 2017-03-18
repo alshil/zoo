@@ -30,5 +30,3 @@ elif b == "dev":
 		print ("Деление на 0!")
 		b = int (input ("второе число "))
 		print (a // c)
-		
-	
