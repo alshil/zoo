@@ -8,8 +8,8 @@ b = int (input ("Enter the second number "))
 c = int (input ("Enter the third number "))
 if c < b < a:
 	print (a)
-	print (b)
 	print (c)
+	print (b)
 elif c < a < b:
 	print (b)
 	print (c)
