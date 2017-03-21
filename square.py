@@ -1,22 +1,18 @@
-## На вход принимается название фигуры, значения ее сторон, 
-## рассчитывается площадь.
-
-figure_name = str (input("название фигуры "))
-if figure_name == "треугольник":
-	a = float (input ("1 сторона "))
-	b = float (input ("2 сторона "))
-	c = float (input ("3 сторона "))
-## Ниже проверяется основное правило треугольника
+# Depends on the figure name an app calculates figure`s square
+figure_name = str (input("figure name "))
+if figure_name == "triangle":
+	a = float (input ("1 side "))
+	b = float (input ("2 side "))
+	c = float (input ("3 sideа "))
 	if a + b > c or b + c > a or c + a > b:
 		p = (a + b + c) / 2
 		print (p * (p -a) * (p - b) * (p -c) **0.5 )
 	else:
-		print ("Неверные параметры.Сумма двух сторон всегда больше третьей стороны")
-elif figure_name == "прямоугольник":
-	a = float (input ("1 сторона "))
-	b = float (input ("2 сторона "))
+		print ("Wrong parametrs.A sum of 2 sides is always bigger than a one`s length")
+elif figure_name == "rectangle"
+	a = float (input ("1 side "))
+	b = float (input ("2 side "))
 	print (a * b)
-else figure_name == "круг":  ## ругается на эту строчку!
-	radius = float (input("радиус окружности ")
-	pi = 3.14
-	print ((radius ** 2) * pi)
+elif figure_name == "circle": 
+	cir_radius = float (input("radius ")
+	print (((cir_radius) **2) 3.14)
